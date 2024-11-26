@@ -1,0 +1,124 @@
+<!-- This is my first Come First Serve html page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority-Scheduling</title>
+    <!-- Link to my fcfs css -->
+    <link rel="stylesheet" href="CSS/priority.css">
+    <!-- link to my bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body class="bg-black">
+    <div class="pt-3">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <a class="navbar-brand" href="index4.html">CPU Scheduling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="fcfs.html">FCFS </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sjf.html">SJF <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="priority.html">Priority-Scheduling</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="roundrobin.html">RoundRobin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="multilevel.html">Multilevel queue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quiz.html">Quiz</a>
+                        </li>
+                        
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- SJF Section -->
+    <main class="pt-5">
+        <!-- Main content -->
+        <div class="container overflow-hidden">
+            <div class="row gx-5">
+              <div class="col">
+                <section id="sjf" >
+                    <h2 class="text-white">Priority-Scheduling</h2>
+                    <p class="text-white">Priority-Scheduling is a pre-emptive method of CPU scheduling algorithm that works based on the priority of a process. In this type Cpu scheduling algorithm, processes are assigned priorities, and the highest - priority process executes first. An advantage that priority-Scheduling has is that it handles critical tasks effectively and a disavantage is that low-priority process may face starvation.</p>
+                    <p class="text-white"><b>Sample Analogy:</b> In the hospital, a doctor stops attending to a patient with a minor injury to save someone having a heart attack or was rushed to the emergency room.</p>
+                    <label for="priority-processes" class="text-white">Enter burst times and priorities (comma-separated, e.g., 5:2,3:1,8:3):</label>
+    <input type="text" id="priority-processes" placeholder="e.g., 5:2,3:1,8:3" class="text-white">
+    <button onclick="simulatePriority()" class="text-white">Simulate Priority Scheduling</button>
+    <pre id="priority-result" class="output text-white"></pre>
+                </section>
+              </div>
+              <div class="col ">
+                <div class="maincontainer ">
+                    <div class="cube">
+                        <div class="top">
+                            <img src="Images/p1.jpeg" alt="">
+                        </div>
+                
+                        <div>
+                            <span style="--i: 0">
+                                <div class="text-1">
+                                    <img src="Images/p5.webp" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 1">
+                                <div class="text-2">
+                                    <img src="Images/p4.webp" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 2">
+                                <div class="text-3">
+                                    <img src="Images/p2.webp" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 3">
+                                <div class="text-4">
+                                    <img src="Images/p3.webp" alt="">
+                                </div>
+                
+                            </span>
+                        </div>
+                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+         
+    </main>
+    
+    <footer class="bg-black text-white">
+        <div class="container">
+            <p class="text-center">&copy; Noela Ek 2024 COMSC 279 Project</p>
+        </div>
+    </footer>
+    <script src="JS/priority.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

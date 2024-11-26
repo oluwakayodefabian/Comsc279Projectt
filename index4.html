@@ -1,0 +1,153 @@
+<!-- This website tends to explain CPU Scheduling and its types and how they function -->
+<!-- This is my Comsc 279 Project -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Scheduling</title>
+    <!-- This is a link to my Css -->
+    <link rel="stylesheet" href="CSS/index4.css">
+    <!-- This is a link to my bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="CSS/bootstrap.min.css"> -->
+    <!-- this is a link to my font awesome -->
+    <!-- <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css"> -->
+</head>
+<!-- Body of my website -->
+<body class="">
+    <div class="pt-3">
+        <!-- <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos vitae quia id quae fuga beatae molestias cupiditate eveniet, perspiciatis, officiis voluptatem? Aut debitis voluptatem voluptates facere beatae tenetur inventore?</p> -->
+        <!-- This is the header section  -->
+        <!-- <header class="header-display"> -->
+            <!-- <p class="text-white ps-3">CPU SCHEDULING</p> -->
+            <!-- <ul class="d-flex justify-content-around"> -->
+                <!-- <li><a href="#">FCFS</a></li> -->
+                <!-- <li><a href="#">SJF</a></li> -->
+                <!-- <li><a href="#">Priority Scheduling</a></li> -->
+                <!-- <li><a href="#">Round Robin</a></li> -->
+                <!-- <li><a href="#">Multilevel Queue</a></li> -->
+                <!-- <li><a href="#">Quiz</a></li> -->
+            <!-- </ul> -->
+        <!-- </header> -->
+        <!-- <div class="image-con"> -->
+            <!-- <img src="Images/o.jpeg" alt="cpu_image" class="image"> -->
+        <!-- </div> -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <a class="navbar-brand" href="index4.html">CPU Scheduling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="fcfs.html">FCFS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sjf.html">SJF</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="priority.html">Priority-Scheduling</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="roundrobin.html">RoundRobin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="multilevel.html">Multilevel queue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quiz.html">Quiz</a>
+                        </li>
+                        
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main class="pt-5">
+        <!-- Main content -->
+        <div class="container overflow-hidden">
+            <div class="row gx-5">
+              <div class="col">
+                <div class="maincontainer ">
+                    <div class="cube">
+                        <div class="top">
+                            <img src="Images/ashcpu.jpeg" alt="">
+                        </div>
+                
+                        <div>
+                            <span style="--i: 0">
+                                <div class="text-1">
+                                    <img src="Images/gcpu.jpeg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 1">
+                                <div class="text-2">
+                                    <img src="Images/istockphoto-1397047849-1024x1024.jpg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 2">
+                                <div class="text-3">
+                                    <img src="Images/o.jpeg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 3">
+                                <div class="text-4">
+                                    <img src="Images/redcpu.jpeg" alt="">
+                                </div>
+                
+                            </span>
+                        </div>
+                
+                    </div>
+                  </div>
+              </div>
+              <div class="col ">
+                <div class="p-3 ">
+                    <h1 class="text-white mt-5 text-center">Introduction:</h1>
+                    <p class="text-white fs-5 mt-5  text-left">CPU scheduling is the process of managing how processes share CPU resources in multitasking systems.It is also a process used by the operating system to decide which task or program gets to use the CPU at a particular time. <br> <br><span><b>Main Function of CPU Scheduling</b> <br>Is to ensure that whenever the CPU remains idle, the OS has at least selected one of the processes available in the ready-to-use line</span> <br><br><span><b>Types of CPU Scheduling</b> <br> 
+                    <ol class="text-white">
+                       <li> <b>Preemptive Scheduling:</b>  is used when a process switches from running state to ready state or from the waiting state to the ready state. Algorithms under this include; <ul>
+                        <li> Priority-Scheduling</li>
+                        <li>Round Robin</li>
+                     </ul></li> 
+                     <br><li><b>Non-Preemptive Scheduling: </b> This is the opposite of preemptive scheduling as it is used when a process terminates , or when a process switches from running state to waiting state. Algorithms under this include: <ul>
+                        <li>FCFS - First Come First Serve</li>
+                        <li>SJF - Shortest Job First</li>
+                     </ul></li>
+                    </ol> </span> 
+                    <span class="text-white">
+                        This guide explores various CPU scheduling algorithms, including their pros, cons, and use cases.
+                    </span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+         
+    </main>
+    <footer class=" text-white">
+        <div class="container">
+            <p class="text-center">&copy; Noela Ek 2024 COMSC 279 Project</p>
+        </div>
+    </footer>
+    <!-- This is a link to the bootsrap js script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="JS/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>

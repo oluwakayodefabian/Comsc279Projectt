@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #050505;
+}
+
+
+.quiz-container {
+    border: white 2px solid;
+    /* padding: 20px; */
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20%;
+    width:60%;
+}
+
+
+
+.question {
+    margin-bottom: 20px;
+}
+
+
+.bd{
+    padding-left: 45%;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333333;
+    text-align: center;
+}

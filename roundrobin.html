@@ -1,0 +1,128 @@
+<!-- This is my first Come First Serve html page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoundRobin</title>
+    <!-- Link to my fcfs css -->
+    <link rel="stylesheet" href="CSS/roundrobin.css">
+    <!-- link to my bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body class="bg-black">
+    <div class="pt-3">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <a class="navbar-brand" href="index4.html">CPU Scheduling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="fcfs.html">FCFS </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sjf.html">SJF </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="priority.html">Priority-Scheduling</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="roundrobin.html">RoundRobin <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="multilevel.html">Multilevel queue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quiz.html">Quiz</a>
+                        </li>
+                        
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- SJF Section -->
+    <main class="pt-5">
+        <!-- Main content -->
+        <div class="container overflow-hidden">
+            <div class="row gx-5">
+              <div class="col">
+                <section id="sjf" >
+                    <h2 class="text-white">Round Robin</h2>
+                    <p class="text-white">Round Robin is a pre-emptive method of CPU scheduling algorithm where each process is cyclically assigned a fixed time slot. It is simple, easy to use, and starvation-free as all processes get the balanced CPU allocation. A disadvantage about it is that the performance of each process depends on the time quantum size.</p>
+                    <p class="text-white"><b>Sample Analogy:</b> Imagine a group of children playing a board game. Each child gets a fixed amount of time to make their move, say 2 minutes. Once their time is up, even if they haven't finished their turn, they have to stop and let the next child take their turn. This continues in a cycle until all the children have completed their moves and the game ends.</p>
+                    <label for="rr-processes" class="text-white">Enter burst times (comma-separated, e.g., 5,3,8,6):</label>
+    <input type="text" id="rr-processes" placeholder="e.g., 5,3,8,6" class="text-white">
+    <br> <br>
+    <label for="time-quantum" class="text-white">Enter time quantum:</label>
+    <input type="number" id="time-quantum" placeholder="e.g., 3" class="text-white">
+    <br>
+    <button onclick="simulateRoundRobin()" class="text-white">Simulate Round Robin</button>
+    <pre id="rr-result" class="output text-white"></pre>
+                </section>
+              </div>
+              <div class="col ">
+                <div class="maincontainer ">
+                    <div class="cube">
+                        <div class="top">
+                            <img src="Images/rr1.jpeg" alt="">
+                        </div>
+                
+                        <div>
+                            <span style="--i: 0">
+                                <div class="text-1">
+                                    <img src="Images/rr2.webp" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 1">
+                                <div class="text-2">
+                                    <img src="Images/rr3.jpeg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 2">
+                                <div class="text-3">
+                                    <img src="Images/rr1.jpeg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 3">
+                                <div class="text-4">
+                                    <img src="Images/rr2.webp" alt="">
+                                </div>
+                
+                            </span>
+                        </div>
+                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+         
+    </main>
+    
+    <footer class="bg-black text-white">
+        <div class="container">
+            <p class="text-center">&copy; Noela Ek 2024 COMSC 279 Project</p>
+        </div>
+    </footer>
+    <script src="JS/roundrobin.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

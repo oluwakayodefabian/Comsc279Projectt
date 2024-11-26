@@ -1,0 +1,124 @@
+<!-- This is my first Come First Serve html page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJF</title>
+    <!-- Link to my fcfs css -->
+    <link rel="stylesheet" href="CSS/sjf.css">
+    <!-- link to my bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body class="bg-black">
+    <div class="pt-3">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <a class="navbar-brand" href="index4.html">CPU Scheduling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="fcfs.html">FCFS </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="sjf.html">SJF <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="priority.html">Priority-Scheduling</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="roundrobin.html">RoundRobin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="multilevel.html">Multilevel queue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quiz.html">Quiz</a>
+                        </li>
+                        
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- SJF Section -->
+    <main class="pt-5">
+        <!-- Main content -->
+        <div class="container overflow-hidden">
+            <div class="row gx-5">
+              <div class="col">
+                <section id="sjf" >
+                    <h2 class="text-white">Shortest Job First</h2>
+                    <p class="text-white">Shortest job first (SJF) is a scheduling algorithm that selects the waiting process with the smallest execution time to be executed next</p>
+                    <p class="text-white"><b>Sample Analogy:</b> Imagine a laundromat where the attendant processes clothes. If someone comes with only a single shirt, their job might be prioritized over someone with a large pile of laundry.</p>
+                    <label for="sjf-processes" class="text-white">Enter Processes (comma-separated burst times):</label>
+                    <input type="text" id="sjf-processes" placeholder="e.g., 5, 3, 8, 6" class="text-white">
+                    <button onclick="simulateSJF()" class="text-white">Simulate SJF</button>
+                    <pre id="sjf-result" class="output text-white"></pre>
+                </section>
+              </div>
+              <div class="col ">
+                <div class="maincontainer ">
+                    <div class="cube">
+                        <div class="top">
+                            <img src="Images/ashcpu.jpeg" alt="">
+                        </div>
+                
+                        <div>
+                            <span style="--i: 0">
+                                <div class="text-1">
+                                    <img src="Images/gcpu.jpeg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 1">
+                                <div class="text-2">
+                                    <img src="Images/istockphoto-1397047849-1024x1024.jpg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 2">
+                                <div class="text-3">
+                                    <img src="Images/o.jpeg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 3">
+                                <div class="text-4">
+                                    <img src="Images/redcpu.jpeg" alt="">
+                                </div>
+                
+                            </span>
+                        </div>
+                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+         
+    </main>
+    
+    <footer class="bg-black text-white">
+        <div class="container">
+            <p class="text-center">&copy; Noela Ek 2024 COMSC 279 Project</p>
+        </div>
+    </footer>
+    <script src="JS/sjf.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!-- This is my first Come First Serve html page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCFS</title>
+    <!-- Link to my fcfs css -->
+    <link rel="stylesheet" href="CSS/quiz.css">
+    <!-- link to my bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body class="bg-black">
+    <div class="pt-3">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <a class="navbar-brand" href="index4.html">CPU Scheduling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="fcfs.html">FCFS </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sjf.html">SJF</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="priority.html">Priority-Scheduling</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="roundrobin.html">RoundRobin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="multilevel.html">Multilevel queue</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="quiz.html">Quiz<span class="sr-only">(current)</span></a>
+                        </li>
+                        
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main class="text-white pt-3">
+        <div class="quiz-container p-3 justify-content-center">
+            <h3 class="text-center">CPU Scheduling Quiz</h3>
+            <form id="quiz-form" class="justify-content-center">
+                <div class="question">
+                    
+                    <p>1. There are two types of CPU scheduling called _______</p>
+                    <label><input type="radio" name="q1" value="A"> A. FCFS and SJF</label><br>
+                    <label><input type="radio" name="q1" value="B"> B. Preemptive and Non-preemptive</label><br>
+                    <label><input type="radio" name="q1" value="C"> C. Priority and Round Robin</label><br>
+                    <label><input type="radio" name="q1" value="D"> D. Multilevel and Multilevel Feedback</label>
+                </div>
+                <div class="question">
+                    <p>2. Foreground is to interactive as background is to ______</p>
+                    <label><input type="radio" name="q2" value="A"> A. Real-time</label><br>
+                    <label><input type="radio" name="q2" value="B"> B. Batch</label><br>
+                    <label><input type="radio" name="q2" value="C"> C. FCFS</label><br>
+                    <label><input type="radio" name="q2" value="D"> D. SJF</label>
+                </div>
+                <div class="question">
+                    <p>3. In Round Robin the performance of each process depends on ______</p>
+                    <label><input type="radio" name="q3" value="A"> A. Time quantum size</label><br>
+                    <label><input type="radio" name="q3" value="B"> B. Priority of processes</label><br>
+                    <label><input type="radio" name="q3" value="C"> C. Burst time</label><br>
+                    <label><input type="radio" name="q3" value="D"> D. CPU cycles</label>
+                </div>
+                <div class="question">
+                    <p>4. Priority scheduling works based on ____ of the process</p>
+                    <label><input type="radio" name="q4" value="A"> A. Burst time</label><br>
+                    <label><input type="radio" name="q4" value="B"> B. Arrival time</label><br>
+                    <label><input type="radio" name="q4" value="C"> C. Priority</label><br>
+                    <label><input type="radio" name="q4" value="D"> D. Completion time</label>
+                </div>
+                <div class="question">
+                    <p>5. FCFS schedules algorithm by ______</p>
+                    <label><input type="radio" name="q5" value="A"> A. Priority</label><br>
+                    <label><input type="radio" name="q5" value="B"> B. Time quantum</label><br>
+                    <label><input type="radio" name="q5" value="C"> C. The order they arrive</label><br>
+                    <label><input type="radio" name="q5" value="D"> D. Process ID</label>
+                </div>
+              <div class="bd">
+                <button type="button" class="btn btn-light " onclick="checkAnswers()">Submit</button>
+              
+              </div>  
+            </form>
+            <div id="result" class="result"></div>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white">
+        <div class="container">
+            <p class="text-center">&copy; Noela Ek 2024 COMSC 279 Project</p>
+        </div>
+    </footer>
+    <script src="JS/quiz.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

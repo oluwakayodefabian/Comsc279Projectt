@@ -1,0 +1,127 @@
+<!-- This is my first Come First Serve html page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCFS</title>
+    <!-- Link to my fcfs css -->
+    <link rel="stylesheet" href="CSS/fcfs.css">
+    <!-- link to my bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body class="bg-black">
+    <div class="pt-3">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <a class="navbar-brand" href="index4.html">CPU Scheduling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="fcfs.html">FCFS <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sjf.html">SJF</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="priority.html">Priority-Scheduling</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="roundrobin.html">RoundRobin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="multilevel.html">Multilevel queue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quiz.html">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html">Search</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- FCFS Section -->
+    <main class="pt-5">
+        <!-- Main content -->
+        <div class="container overflow-hidden">
+            <div class="row gx-5">
+              <div class="col">
+                <section id="fcfs" >
+                    <h2 class="text-white">First-Come, First-Served (FCFS)</h2>
+                    <p class="text-white">As the name suggests the First Come First Serve scheduling algorithm means that the process that requests the CPU first is allocated the CPU first. It is basically implemented using a First In First Out queue. It supports both non-preemptive and preemptive CPU scheduling algorithms</p>
+                    <p class="text-white">The FCFS algorithm schedules processes in the order they arrive. It’s simple but can lead to long waiting times for some processes.</p>
+                    <p class="text-white"><b>Sample Analogy:</b> Think of a line at a grocery store checkout counter. Customers are served in the exact order they arrive, regardless of how much they have in their cart.</p>
+                    <label for="fcfs-processes" class="text-white">Enter Processes (comma-separated burst times):</label>
+                    <input type="text" id="fcfs-processes" placeholder="e.g., 5, 3, 8, 6" class="text-white">
+                    <button onclick="simulateFCFS()" class="text-white">Simulate FCFS</button>
+                    <pre id="fcfs-result" class="text-white"></pre>
+                </section>
+              </div>
+              <div class="col ">
+                <div class="maincontainer ">
+                    <div class="cube">
+                        <div class="top">
+                            <img src="Images/grocery.jpeg" alt="">
+                        </div>
+                
+                        <div>
+                            <span style="--i: 0">
+                                <div class="text-1">
+                                    <img src="Images/poor_consumer3_kl_052223-1.jpg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 1">
+                                <div class="text-2">
+                                    <img src="Images/pexels-photo-14359657.jpeg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 2">
+                                <div class="text-3">
+                                    <img src="Images/gro2.jpg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 3">
+                                <div class="text-4">
+                                    <img src="Images/g3.webp" alt="">
+                                </div>
+                
+                            </span>
+                        </div>
+                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+         
+    </main>
+    
+    <footer class="bg-black text-white">
+        <div class="container">
+            <p class="text-center">&copy; Noela Ek 2024 COMSC 279 Project</p>
+        </div>
+    </footer>
+    <script src="JS/fcfs.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

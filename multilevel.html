@@ -1,0 +1,130 @@
+<!-- This is my first Come First Serve html page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilevel</title>
+    <!-- Link to my fcfs css -->
+    <link rel="stylesheet" href="CSS/multilevel.css">
+    <!-- link to my bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body class="bg-black">
+    <div class="pt-3">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <a class="navbar-brand" href="index4.html">CPU Scheduling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="fcfs.html">FCFS </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sjf.html">SJF</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="priority.html">Priority-Scheduling</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="roundrobin.html">RoundRobin</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="multilevel.html">Multilevel queue <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quiz.html">Quiz</a>
+                        </li>
+                        
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main class="pt-5">
+        <!-- Main content -->
+        <div class="container overflow-hidden">
+            <div class="row gx-5">
+              <div class="col">
+                <section id="sjf" >
+                    <h2 class="text-white">Multilevel Queue Scheduling</h2>
+                    <p class="text-white">Multilevel Queue Scheduling is a cpu scheduling algorithm whereby the process is divided in categories or seperate queues. For example; foreground which is <b>interactive</b> and background which is <b>batch</b> and each queue has its own scheduling algorithm. For foreground, it uses the Round Robin scheduling algorithm while background uses the First-Come First-Served scheduling algorithm. It is efficient for handling different types of processes but it has a rigid structure whereby processes are stuck in their queue</p>
+                    <p class="text-white"><b>Sample Analogy:</b> Imagine a school cafeteria during lunchtime where the staff serves different groups of people. Teachers have the highest priority and are served first so they can quickly return to their classes. Once all the teachers are served, the staff moves on to the students, ensuring they have enough time to eat during their break. Finally, the administrative staff, with the most flexible schedules, are served last. Each group has its own dedicated line, and people in the same line are served in the order they arrived.</p>
+                    <p class="text-white">Enter process burst times for each queue:</p>
+    <label for="system-queue" class="text-white">System Queue (High Priority):</label>
+    <input type="text" id="system-queue" placeholder="e.g., 5, 3, 8" class="text-white">
+    <br>
+    <label for="interactive-queue" class="text-white">Interactive Queue (Medium Priority):</label>
+    <input type="text" id="interactive-queue" placeholder="e.g., 4, 6, 2" class="text-white">
+    <br>
+    <label for="batch-queue" class="text-white">Batch Queue (Low Priority):</label>
+    <input type="text" id="batch-queue" placeholder="e.g., 7, 5, 9" class="text-white">
+    <br>
+    <button onclick="simulateMultilevelQueue()" class="text-white">Simulate Scheduling</button>
+    <pre id="mlq-result" class="output text-white"></pre>
+                </section>
+              </div>
+              <div class="col ">
+                <div class="maincontainer ">
+                    <div class="cube">
+                        <div class="top">
+                            <img src="Images/ca1.jpg" alt="">
+                        </div>
+                
+                        <div>
+                            <span style="--i: 0">
+                                <div class="text-1">
+                                    <img src="Images/ca2.jpg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 1">
+                                <div class="text-2">
+                                    <img src="Images/ca3.jpg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 2">
+                                <div class="text-3">
+                                    <img src="Images/ca4.jpg" alt="">
+                                </div>
+                
+                            </span>
+                
+                            <span style="--i: 3">
+                                <div class="text-4">
+                                    <img src="Images/ca1.jpg" alt="">
+                                </div>
+                
+                            </span>
+                        </div>
+                
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+         
+    </main>
+    <footer class="bg-black text-white">
+        <div class="container">
+            <p class="text-center">&copy; Noela Ek 2024 COMSC 279 Project</p>
+        </div>
+    </footer>
+    <script src="JS/multilevel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
